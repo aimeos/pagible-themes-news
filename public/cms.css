@@ -1,10 +1,10 @@
 /**
- * News Theme - Structured editorial design for news and magazine sites
+ * News Theme - Dense financial-newspaper design
  * @license MIT, https://opensource.org/license/MIT
  */
 
 :root[data-theme=light] {
-    --news-content-width: 1280px;
+    --news-content-width: 1180px;
     --pico-font-family-sans-serif: Arial, Helvetica, ui-sans-serif, sans-serif;
     --pico-font-family-display: 'Iowan Old Style', Baskerville, Georgia, 'Times New Roman', ui-serif, serif;
     --pico-font-family-monospace: ui-monospace, monospace;
@@ -14,56 +14,56 @@
     --pico-nav-element-spacing-vertical: 0.5rem;
     --pico-nav-link-spacing-horizontal: 0.5rem;
     --pico-nav-link-spacing-vertical: 0.5rem;
-    --pico-color: #172126;
-    --pico-background-color: #ECEFF1;
-    --pico-text-selection-color: #D8E4E9;
-    --pico-muted-color: #59646A;
-    --pico-muted-border-color: #C7CDD1;
-    --pico-muted-background-color: #DDE2E5;
-    --pico-contrast: #172126;
-    --pico-contrast-border: #172126;
-    --pico-contrast-background: #172126;
-    --pico-contrast-underline: #172126;
-    --pico-contrast-hover: #050708;
-    --pico-contrast-hover-border: #050708;
-    --pico-contrast-hover-background: #050708;
-    --pico-contrast-hover-underline: #050708;
-    --pico-contrast-focus: #D8E4E9;
-    --pico-contrast-inverse: #F8F9FA;
-    --pico-primary: #A02B33;
-    --pico-primary-background: #A02B33;
-    --pico-primary-border: #A02B33;
-    --pico-primary-underline: #A02B33;
-    --pico-primary-hover: #7F1F27;
-    --pico-primary-hover-background: #7F1F27;
-    --pico-primary-hover-border: #7F1F27;
-    --pico-primary-hover-underline: #7F1F27;
-    --pico-primary-focus: #F0CDD0;
+    --pico-color: #262A2C;
+    --pico-background-color: #E9ECEE;
+    --pico-text-selection-color: #CCDADD;
+    --pico-muted-color: #545C60;
+    --pico-muted-border-color: #B8BFC2;
+    --pico-muted-background-color: #DDE1E3;
+    --pico-contrast: #262A2C;
+    --pico-contrast-border: #262A2C;
+    --pico-contrast-background: #262A2C;
+    --pico-contrast-underline: #262A2C;
+    --pico-contrast-hover: #080A0B;
+    --pico-contrast-hover-border: #080A0B;
+    --pico-contrast-hover-background: #080A0B;
+    --pico-contrast-hover-underline: #080A0B;
+    --pico-contrast-focus: #CCDADD;
+    --pico-contrast-inverse: #E9ECEE;
+    --pico-primary: #8B1538;
+    --pico-primary-background: #8B1538;
+    --pico-primary-border: #8B1538;
+    --pico-primary-underline: #8B1538;
+    --pico-primary-hover: #660C29;
+    --pico-primary-hover-background: #660C29;
+    --pico-primary-hover-border: #660C29;
+    --pico-primary-hover-underline: #660C29;
+    --pico-primary-focus: #E3C5CE;
     --pico-primary-inverse: #FFFFFF;
-    --pico-secondary: #35566A;
-    --pico-secondary-background: #35566A;
-    --pico-secondary-border: #35566A;
-    --pico-secondary-underline: #35566A;
-    --pico-secondary-hover: #203B4B;
-    --pico-secondary-hover-background: #203B4B;
-    --pico-secondary-hover-border: #203B4B;
-    --pico-secondary-hover-underline: #203B4B;
-    --pico-secondary-focus: #CCD7DC;
+    --pico-secondary: #0D4851;
+    --pico-secondary-background: #0D4851;
+    --pico-secondary-border: #0D4851;
+    --pico-secondary-underline: #0D4851;
+    --pico-secondary-hover: #07343B;
+    --pico-secondary-hover-background: #07343B;
+    --pico-secondary-hover-border: #07343B;
+    --pico-secondary-hover-underline: #07343B;
+    --pico-secondary-focus: #C4D4D6;
     --pico-secondary-inverse: #FFFFFF;
-    --pico-h1-color: #172126;
-    --pico-h2-color: #172126;
-    --pico-h3-color: #172126;
-    --pico-h4-color: #172126;
-    --pico-h5-color: #27353C;
-    --pico-h6-color: #435159;
+    --pico-h1-color: #262A2C;
+    --pico-h2-color: #262A2C;
+    --pico-h3-color: #262A2C;
+    --pico-h4-color: #262A2C;
+    --pico-h5-color: #353B3E;
+    --pico-h6-color: #495155;
     --pico-box-shadow: none;
-    --pico-dropdown-color: #172126;
-    --pico-dropdown-border-color: #C7CDD1;
-    --pico-dropdown-background-color: #F8F9FA;
-    --pico-dropdown-hover-background-color: #ECEFF1;
-    --pico-dropdown-box-shadow: 0 0.5rem 1.5rem #1721261A;
-    --pico-modal-overlay-background-color: #172126A6;
-    --pico-code-background-color: #172126;
+    --pico-dropdown-color: #262A2C;
+    --pico-dropdown-border-color: #B8BFC2;
+    --pico-dropdown-background-color: #E9ECEE;
+    --pico-dropdown-hover-background-color: #DDE1E3;
+    --pico-dropdown-box-shadow: 0 0.5rem 1.5rem #262A2C1A;
+    --pico-modal-overlay-background-color: #262A2CA6;
+    --pico-code-background-color: #262A2C;
     --pico-code-color: #FFFFFF;
     --pico-border-radius: 0;
 }
@@ -82,7 +82,7 @@ body {
     background-color: var(--pico-background-color);
     color: var(--pico-color);
     font-family: var(--pico-font-family-sans-serif);
-    font-size: 1rem;
+    font-size: 0.9375rem;
 }
 
 :focus-visible {
@@ -138,12 +138,12 @@ nav li :where(a, [role=link]) {
     font-size: 0.6875rem;
     font-weight: 700;
     gap: 0.625rem;
-    justify-content: center;
+    justify-content: flex-start;
     letter-spacing: 0.08em;
     margin: auto;
     max-width: var(--news-content-width);
-    min-height: 2rem;
-    padding-inline: 2rem;
+    min-height: 2.25rem;
+    padding-inline: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -152,7 +152,7 @@ nav li :where(a, [role=link]) {
 }
 
 body > header {
-    background: var(--pico-contrast-inverse);
+    background: var(--pico-background-color);
     border-bottom: 1px solid var(--pico-contrast);
     margin: 0;
     max-width: none;
@@ -183,7 +183,7 @@ header nav > ul > li {
 header nav > ul:first-of-type {
     align-items: center;
     justify-content: center;
-    min-height: 7.5rem;
+    min-height: 5.5rem;
     width: 100%;
 }
 
@@ -200,14 +200,14 @@ header nav .brand a {
 header nav .brand img {
     display: block;
     height: auto;
-    max-height: 4.5rem;
-    width: min(28rem, 60vw);
+    max-height: 3.25rem;
+    width: min(22rem, 52vw);
 }
 
 header nav .brand a {
     color: var(--pico-contrast);
     font-family: var(--pico-font-family-display);
-    font-size: 4rem;
+    font-size: 3.25rem;
     font-weight: 700;
     letter-spacing: -0.055em;
     line-height: 1;
@@ -215,9 +215,9 @@ header nav .brand a {
 }
 
 header nav ul.menu {
-    border-top: 0.25rem solid var(--pico-contrast);
+    border-top: 1px solid var(--pico-contrast);
     justify-content: center;
-    min-height: 3.25rem;
+    min-height: 2.5rem;
     order: 3;
     width: 100%;
 }
@@ -231,13 +231,13 @@ header nav details.dropdown > summary:not([role]) {
     color: var(--pico-color);
     cursor: pointer;
     display: flex;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 700;
     height: auto;
     letter-spacing: 0.025em;
     list-style: none;
     margin: 0;
-    padding: 1rem 0.625rem;
+    padding: 0.6875rem 0.5625rem;
     text-decoration: none;
 }
 
@@ -262,18 +262,19 @@ header nav .menu a.active {
 }
 
 header nav ul.menu > li:first-child {
-    inset-block-start: 2.25rem;
-    inset-inline-start: 2rem;
+    inset-block-start: 1.625rem;
+    inset-inline-start: 1.25rem;
     position: absolute;
 }
 
 header nav ul.menu > li:first-child a {
-    padding: 0.5rem;
+    gap: 0.375rem;
+    padding: 0.5rem 0;
 }
 
 header nav ul.menu > li.subscribe {
-    inset-block-start: 2.15rem;
-    inset-inline-end: 2rem;
+    inset-block-start: 1.4rem;
+    inset-inline-end: 1.25rem;
     position: absolute;
 }
 
@@ -282,9 +283,26 @@ header nav ul.menu > li.subscribe > a {
     color: var(--pico-primary-inverse);
     font-size: 0.75rem;
     letter-spacing: 0.06em;
-    padding: 0.625rem 0.875rem;
+    padding: 0.625rem 0.75rem;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+header nav ul.menu > li.login {
+    inset-block-start: 1.625rem;
+    inset-inline-end: 8.25rem;
+    position: absolute;
+}
+
+header nav ul.menu > li.login a {
+    gap: 0.25rem;
+    padding: 0.5rem 0;
+}
+
+header nav ul.menu > li:first-child svg,
+header nav ul.menu > li.login svg {
+    height: 1rem;
+    width: 1rem;
 }
 
 header nav ul.menu > li.subscribe > a:hover,
@@ -340,16 +358,16 @@ header nav .sidebar-close button {
 
     header nav > ul:first-of-type {
         justify-content: flex-start;
-        min-height: 5rem;
+        min-height: 4.25rem;
     }
 
     header nav .brand a {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     header nav .brand img {
-        max-height: 3rem;
-        width: min(18rem, 60vw);
+        max-height: 2.5rem;
+        width: min(16rem, 58vw);
     }
 
     header nav .menu-open.show,
@@ -370,7 +388,7 @@ header nav .sidebar-close button {
 
     header nav.small {
         align-content: flex-start;
-        background-color: var(--pico-contrast-inverse);
+        background-color: var(--pico-background-color);
         display: flex;
         height: 100%;
         inset: 0;
@@ -396,6 +414,10 @@ header nav .sidebar-close button {
         padding: 0;
         position: relative;
         width: 100%;
+    }
+
+    header nav.small .menu > li.login {
+        position: static;
     }
 
     header nav.small .menu a,
@@ -437,7 +459,7 @@ header nav .sidebar-close button {
 }
 
 nav.breadcrumb {
-    background: var(--pico-contrast-inverse);
+    background: var(--pico-background-color);
     border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
@@ -502,24 +524,27 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    line-height: 0.96;
-    margin-bottom: 2rem;
+    font-size: clamp(2.25rem, 4vw, 3.75rem);
+    line-height: 1;
+    margin-bottom: 1.25rem;
 }
 
 h2 {
     border-top: 0.25rem solid var(--pico-contrast);
     border-bottom: 1px solid var(--pico-muted-border-color);
-    font-size: clamp(1.75rem, 3.5vw, 3rem);
-    line-height: 1.05;
-    margin-bottom: 2rem;
-    padding-block: 0.75rem;
+    font-family: var(--pico-font-family-sans-serif);
+    font-size: 0.8125rem;
+    letter-spacing: 0.075em;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    padding-block: 0.5rem;
+    text-transform: uppercase;
 }
 
 h3 {
-    font-size: 1.35rem;
-    line-height: 1.15;
-    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.12;
+    margin-bottom: 0.5rem;
 }
 
 h4 {
@@ -583,10 +608,10 @@ img {
 }
 
 body > footer.bottom {
-    background: var(--pico-muted-background-color);
-    border-top: 1px solid var(--pico-muted-border-color);
-    border-bottom: 0.375rem solid var(--pico-contrast);
-    color: var(--pico-color);
+    background: var(--pico-secondary-hover);
+    border-top: 0;
+    border-bottom: 0.375rem solid var(--pico-primary);
+    color: var(--pico-secondary-inverse);
     padding: 2rem;
     text-align: center;
 }
@@ -600,12 +625,13 @@ body > footer.bottom .container {
 }
 
 body > footer.bottom img.brand {
+    filter: grayscale(1) brightness(0) invert(1);
     max-height: 2rem;
     max-width: 14rem;
 }
 
 body > footer.bottom .copyright {
-    color: var(--pico-muted-color);
+    color: var(--pico-secondary-inverse);
     font-size: 0.6875rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;

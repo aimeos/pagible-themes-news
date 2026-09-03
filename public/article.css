@@ -4,13 +4,13 @@
 
 .article .title {
     border-top: 0.35rem solid var(--pico-contrast);
-    max-width: 62rem;
+    max-width: 54rem;
     padding-top: 1rem;
 }
 
 .article .cover {
     display: block;
-    margin: 2rem 0 2.5rem;
+    margin: 1.25rem 0 1.75rem;
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
 
 .article .cms-text {
     font-family: var(--pico-font-family-display);
-    font-size: clamp(1.125rem, 2vw, 1.35rem);
-    line-height: 1.7;
+    font-size: clamp(1.0625rem, 1.7vw, 1.25rem);
+    line-height: 1.65;
     max-width: 50rem;
 }

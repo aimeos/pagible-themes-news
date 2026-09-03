@@ -18,7 +18,7 @@
 .cms-content .list .list-default,
 .cms-content .list .list-cards {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
     grid-template-columns: 1fr;
 }
 
@@ -28,7 +28,7 @@
     color: var(--pico-color);
     display: block;
     height: 100%;
-    padding-block: 1rem;
+    padding-block: 0.75rem;
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .cms-content .list picture img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     display: block;
     filter: saturate(0.86) contrast(1.03);
     object-fit: cover;
@@ -50,7 +50,7 @@
 }
 
 .cms-content .list .content {
-    padding: 1rem 0 0;
+    padding: 0.625rem 0 0;
 }
 
 .cms-content .list .date {
@@ -62,7 +62,7 @@
 }
 
 .cms-content .list h3 {
-    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    font-size: clamp(1.1rem, 1.7vw, 1.4rem);
     line-height: 1.08;
     margin: 0.5rem 0 0;
 }
@@ -104,11 +104,11 @@
 
     .cms-content .list .list-default > .first {
         border-inline-end: 1px solid var(--pico-muted-border-color);
-        padding-inline-end: 1.5rem;
+        padding-inline-end: 1rem;
     }
 
     .cms-content .list .list-default > .second {
-        padding-inline-start: 1.5rem;
+        padding-inline-start: 1rem;
     }
 
     .cms-content .list .first .list-item {
@@ -117,7 +117,7 @@
     }
 
     .cms-content .list .first h3 {
-        font-size: clamp(1.75rem, 3vw, 3rem);
+        font-size: clamp(1.6rem, 2.6vw, 2.25rem);
     }
 
     .cms-content .list .list-cards {

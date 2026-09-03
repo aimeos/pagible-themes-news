@@ -3,7 +3,7 @@
  */
 
 .hero {
-    background: var(--pico-contrast-inverse);
+    background: transparent;
     border-top: 0.25rem solid var(--pico-contrast);
     overflow: hidden;
     position: relative;
@@ -37,20 +37,19 @@
 }
 
 .hero .container:not(:has(.second)) .first {
-    max-width: 58rem;
-    padding: clamp(2.5rem, 6vw, 5rem) min(5vw, 4rem);
+    max-width: 52rem;
+    padding: 2rem 1.25rem;
 }
 
 .hero .container:has(.second) {
-    align-items: stretch;
-    min-height: clamp(28rem, 48vw, 40rem);
+    align-items: start;
 }
 
 .hero .first {
-    align-self: center;
+    align-self: start;
     margin: 0;
     min-width: 0;
-    padding: clamp(2rem, 5vw, 4rem) min(5vw, 4rem);
+    padding: 1.25rem;
     text-align: start;
 }
 
@@ -66,23 +65,23 @@
     font-size: 0.6875rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    margin-bottom: 1rem;
+    margin-bottom: 0.625rem;
     text-transform: uppercase;
 }
 
 .hero h1 {
-    font-size: clamp(2.75rem, 5.5vw, 5.5rem);
-    line-height: 0.95;
-    margin: 0 0 1.5rem;
-    max-width: 13ch;
+    font-size: clamp(2.25rem, 4.1vw, 3.625rem);
+    line-height: 0.98;
+    margin: 0 0 0.875rem;
+    max-width: 15ch;
 }
 
 .hero .cms-text {
     color: var(--pico-muted-color);
     font-family: var(--pico-font-family-display);
-    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
-    line-height: 1.55;
-    max-width: 36rem;
+    font-size: clamp(1rem, 1.3vw, 1.125rem);
+    line-height: 1.45;
+    max-width: 32rem;
 }
 
 .hero .background ~ .first h1,
@@ -97,7 +96,7 @@
     box-shadow: none;
     display: block;
     margin: 0;
-    min-height: 20rem;
+    min-height: 0;
     overflow: hidden;
     padding: 0;
     position: relative;
@@ -108,7 +107,7 @@
 .hero .second picture,
 .hero .second .slider-container,
 .hero .second .hero-slide {
-    height: 100%;
+    height: auto;
 }
 
 .hero .second picture {
@@ -118,8 +117,9 @@
 
 .hero .second img,
 .hero .second video {
+    aspect-ratio: 4 / 3;
     display: block;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     width: 100%;
 }
@@ -132,16 +132,37 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .hero .actions .btn {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    color: var(--pico-primary);
+    letter-spacing: 0;
     margin: 0;
+    padding: 0.25rem 0;
+    text-transform: none;
+}
+
+.hero .actions .btn::after {
+    content: " →";
+}
+
+.hero .actions .btn:hover {
+    background: transparent;
+    border-color: var(--pico-primary-hover);
+    color: var(--pico-primary-hover);
 }
 
 @media screen and (min-width: 768px) {
     .hero .container:has(.second) {
-        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    }
+
+    .hero .first {
+        padding: 1.5rem 1.5rem 1.5rem 1.25rem;
     }
 
     .hero .second {

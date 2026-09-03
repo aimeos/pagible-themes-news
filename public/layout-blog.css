@@ -3,8 +3,8 @@
  */
 
 main .cms-content {
-    background: var(--pico-contrast-inverse);
-    margin: 1rem auto;
+    background: transparent;
+    margin: 0 auto;
     max-width: var(--news-content-width);
 }
 
@@ -23,12 +23,12 @@ main .cms-content > .toc .container {
 }
 
 .cms-content .container {
-    padding-block: 2rem;
-    padding-inline: min(5vw, 4rem);
+    padding-block: 1.25rem;
+    padding-inline: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
     .cms-content .container {
-        padding-block: 3rem;
+        padding-block: 1.75rem;
     }
 }

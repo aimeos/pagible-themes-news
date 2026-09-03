@@ -23,7 +23,7 @@
             ">
         @endif
 
-        <meta name="theme-color" content="{{ cms($page, 'config.theme.data.--pico-background-color') ?: '#ECEFF1' }}">
+        <meta name="theme-color" content="{{ cms($page, 'config.theme.data.--pico-background-color') ?: '#E9ECEE' }}">
 
         <title>{{ cms($page, 'title') }}</title>
 
@@ -106,7 +106,7 @@
         <header>
             <div class="edition-bar">
                 <div class="edition-bar-inner">
-                    <time datetime="{{ now()->toDateString() }}">@localDate(now(), 'EEEE, d MMMM y')</time>
+                    <time datetime="{{ now()->toDateString() }}">@localDate(now(), 'dddd, D MMMM YYYY')</time>
                     <span aria-hidden="true">•</span>
                     <span>{{ strtoupper(cms($page, 'lang')) }}</span>
                     <span class="edition-page">{{ cms($page, 'name') }}</span>
@@ -154,6 +154,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                             </svg>
+                            <span>{{ __('Search') }}</span>
                         </a>
                     </li>
                     @foreach($nav->items() as $item)
@@ -184,6 +185,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
                                 </svg>
+                                <span>{{ __('Login') }}</span>
                             </a>
                         </li>
                     @endif

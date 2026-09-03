@@ -8,8 +8,8 @@
 }
 
 main .cms-content {
-    background: var(--pico-contrast-inverse);
-    margin: 1rem auto;
+    background: transparent;
+    margin: 0 auto;
     max-width: var(--news-content-width);
 }
 
@@ -20,7 +20,7 @@ main .cms-content > * {
 }
 
 .cms-content .container {
-    padding: 2.5rem min(5vw, 4rem);
+    padding: 1.25rem;
 }
 
 main .heading h1,
@@ -38,8 +38,8 @@ main .heading h3 {
 .text {
     color: var(--pico-muted-color);
     font-family: var(--pico-font-family-display);
-    font-size: 1.125rem;
-    line-height: 1.7;
+    font-size: 1.0625rem;
+    line-height: 1.65;
 }
 
 .text p:last-of-type {
@@ -53,6 +53,6 @@ main .heading h3 {
 
 @media screen and (min-width: 768px) {
     .cms-content .container {
-        padding-block: 3.5rem;
+        padding-block: 1.75rem;
     }
 }

@@ -21,16 +21,16 @@ class NewsDemo extends AbstractDemo
 {
     /** @var array<string, string> Meta descriptions keyed by page path */
     private const DESCRIPTIONS = [
-        'economy' => 'The Ledger explains industry, energy, technology, and independent business with careful reporting, clear writing, and none of the market noise.',
+        'economy' => 'The Ledger Companies desk explains industry, energy, technology, and independent business with careful reporting and clear writing.',
         'industry-without-a-blueprint' => 'How industrial companies are rebuilding production while energy costs, supply chains, and skills shortages apply pressure at the same time.',
         'who-owns-the-grid' => 'Networks, storage, and new power generation will shape the energy transition. The Ledger follows the missing capital and the models that can work.',
-        'money' => 'Analysis of investing, interest rates, retirement planning, and wealth for readers who want to understand decisions instead of chasing trends.',
+        'money' => 'The Ledger Markets desk covers investing, interest rates, retirement planning, and wealth for readers who want to understand the decisions behind price moves.',
         'the-portfolio-without-fads' => 'A resilient ETF portfolio needs fewer products, clear rules, and a time horizon that can withstand difficult months in the market.',
         'what-interest-rates-change' => 'What the new interest-rate environment means for savers, borrowers, and long-term investors—and which old habits have become expensive.',
-        'property' => 'The Ledger reports on housing, construction, renovation, and property markets through the lens of cost, regulation, and liveable cities.',
+        'property' => 'The Ledger Real Estate desk reports on housing, construction, renovation, and property markets through the lens of cost, regulation, and liveable cities.',
         'housing-returns-to-the-city' => 'Why mixed neighbourhoods, smaller homes, and converted buildings will shape housing more than another generation of large greenfield projects.',
         'renovating-in-the-right-order' => 'The sequence of energy upgrades that controls costs, limits risk, and improves a home reliably for decades.',
-        'work' => 'Work, leadership, and culture beyond quick career advice: The Ledger asks which structures genuinely make good work possible.',
+        'work' => 'Work and Careers reporting beyond quick advice: The Ledger asks which structures genuinely make good work possible.',
         'productivity-needs-quiet' => 'Why focused work comes from protected time and clear responsibility—not another round of meetings, messages, and metrics.',
         'leadership-without-the-stage' => 'Good leadership is visible in decisions, preparation, and responsibility, not constant presence and grand performances.',
         'about-ledger' => 'The Ledger is an independent business newspaper. Meet its editorial team and explore how the publication works.',
@@ -80,7 +80,7 @@ class NewsDemo extends AbstractDemo
             ['id' => Utils::uid(), 'type' => 'hero', 'group' => 'main', 'data' => [
                 'title' => 'Business needs context',
                 'subtitle' => 'The editorial team',
-                'text' => 'The Ledger reports on companies, money, property, and work. We ask not only what happened, but who decided, who pays, and what each development changes in everyday life.',
+                'text' => 'The Ledger reports across companies, markets, real estate, and work. We ask not only what happened, but who decided, who pays, and what each development changes in everyday life.',
                 'files' => [['id' => $this->img( 'boardroom' ), 'type' => 'file']],
             ]],
             ['id' => Utils::uid(), 'type' => 'cards', 'group' => 'main', 'data' => [
@@ -104,10 +104,10 @@ class NewsDemo extends AbstractDemo
                 'table' => [
                     ['Desk', 'Editor', 'Base'],
                     ['Editor in chief', 'Elara Venn', 'Hamburg'],
-                    ['Economy', 'Tomas Arden', 'Berlin'],
-                    ['Money', 'Nia Calder', 'Frankfurt'],
-                    ['Property', 'Mira Solven', 'Hamburg'],
-                    ['Work', 'Ivo Maren', 'Munich'],
+                    ['Companies', 'Tomas Arden', 'Berlin'],
+                    ['Markets', 'Nia Calder', 'Frankfurt'],
+                    ['Real estate', 'Mira Solven', 'Hamburg'],
+                    ['Work & careers', 'Ivo Maren', 'Munich'],
                 ],
             ]],
             ['id' => 'contact', 'type' => 'contact', 'group' => 'main', 'data' => [
@@ -324,7 +324,7 @@ class NewsDemo extends AbstractDemo
         if( !isset( $this->element ) )
         {
             $cards = [
-                ['title' => 'Sections', 'text' => "- [Economy](/economy)\n- [Money](/money)\n- [Property](/property)\n- [Work](/work)"],
+                ['title' => 'Sections', 'text' => "- [Companies](/economy)\n- [Markets](/money)\n- [Real estate](/property)\n- [Work & careers](/work)"],
                 ['title' => 'The Ledger', 'text' => "- [About the editors](/about-ledger)\n- [Contact](/about-ledger#contact)\n- [Subscribe](/subscribe)"],
                 ['title' => 'Briefings', 'text' => "- [The Ledger Morning](/subscribe)\n- [Friday Briefing](/subscribe)\n- [Topic dossiers](/economy)"],
                 ['title' => 'Editorial', 'text' => "- [editorial@ledger.example](mailto:editorial@ledger.example)\n- Hamburg · Berlin · Frankfurt"],
@@ -365,7 +365,7 @@ class NewsDemo extends AbstractDemo
      */
     protected function file() : string
     {
-        return $this->img( 'city' );
+        return $this->img( 'factory' );
     }
 
 
@@ -396,53 +396,53 @@ class NewsDemo extends AbstractDemo
 
         $content = [
             ['id' => Utils::uid(), 'type' => 'hero', 'group' => 'main', 'data' => [
-                'title' => 'Business is changing. We show where it leads.',
-                'subtitle' => 'The Ledger | Morning edition',
-                'text' => 'Reporting, analysis, and conversations about companies, money, and work—with time for the facts and attention to the consequences.',
-                'url' => '/economy',
-                'button' => 'Latest analysis',
-                'url-alternative' => '/subscribe',
-                'button-alternative' => 'Try an edition',
+                'title' => 'Europe’s industrial rebuild enters its decisive phase',
+                'subtitle' => 'Companies',
+                'text' => 'Manufacturers are investing while production continues. The next round of decisions will determine where batteries, chips, and clean-energy equipment are made.',
+                'url' => '/industry-without-a-blueprint',
+                'button' => 'Europe’s industrial rebuild',
                 'files' => [['id' => $fileId, 'type' => 'file']],
             ]],
-            ['id' => Utils::uid(), 'type' => 'cards', 'group' => 'main', 'data' => [
-                'title' => 'What matters today',
-                'columns' => 2,
+            ['id' => 'top-stories', 'type' => 'cards', 'group' => 'main', 'data' => [
+                'title' => 'Top stories',
+                'columns' => 4,
                 'cards' => [
-                    ['title' => 'Industry without a blueprint', 'text' => "Factories must become cleaner, more digital, and more independent at once. The rebuild starts while production continues.\n\n[Read the industrial analysis](/industry-without-a-blueprint)", 'file' => ['id' => $this->img( 'factory' ), 'type' => 'file']],
-                    ['title' => 'Who owns the grid?', 'text' => "The energy transition needs networks, storage, and patience. The real conflict begins with the capital behind them.\n\n[Open the energy dossier](/who-owns-the-grid)", 'file' => ['id' => $this->img( 'wind' ), 'type' => 'file']],
-                    ['title' => 'The portfolio without fads', 'text' => "A resilient portfolio is often unremarkable. That becomes its strength when markets turn unsettled.\n\n[Review the portfolio rules](/the-portfolio-without-fads)", 'file' => ['id' => $this->img( 'market' ), 'type' => 'file']],
-                    ['title' => 'Housing returns to the city', 'text' => "Mixed neighbourhoods and converted offices are changing cities faster than new settlements at the edge.\n\n[Read the housing report](/housing-returns-to-the-city)", 'file' => ['id' => $this->img( 'architecture' ), 'type' => 'file']],
+                    ['title' => 'Grid investors confront the missing link in Europe’s energy plans', 'text' => "Energy · 7 min\n\n[The contest for networks and storage](/who-owns-the-grid)"],
+                    ['title' => 'Investors rediscover the appeal of an intentionally dull portfolio', 'text' => "Markets · 5 min\n\n[The portfolio without fads](/the-portfolio-without-fads)"],
+                    ['title' => 'Office conversions bring housing back into the heart of the city', 'text' => "Real estate · 6 min\n\n[How housing returns to the city](/housing-returns-to-the-city)"],
+                    ['title' => 'The companies protecting quiet time from the meeting calendar', 'text' => "Work & careers · 4 min\n\n[Why productivity needs quiet](/productivity-needs-quiet)"],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'image-text', 'group' => 'main', 'data' => [
                 'file' => ['id' => $this->img( 'technology' ), 'type' => 'file'],
                 'position' => 'end',
                 'ratio' => '1-1',
-                'text' => "## The new industrial atlas\n\nWhere are batteries, chips, heat pumps, and data centres being built? The Ledger tracks 180 investment projects to show which regions benefit—and where grids, land, or skilled workers are missing.\n\nThe interactive map connects announced billions with visible building progress. A groundbreaking ceremony is not a factory.\n\n[Explore the industrial atlas story](/industry-without-a-blueprint)",
+                'text' => "## The Big Read: A new industrial atlas\n\nWhere are batteries, chips, heat pumps, and data centres being built? The Ledger tracks 180 investment projects to show which regions benefit—and where grids, land, or skilled workers are missing.\n\nThe map connects announced billions with visible building progress. A groundbreaking ceremony is not a factory.\n\n[Explore the industrial atlas](/industry-without-a-blueprint)",
             ]],
             ['id' => Utils::uid(), 'type' => 'blog', 'group' => 'main', 'data' => [
-                'title' => 'The economy in context',
+                'title' => 'Latest news',
                 'layout' => 'default',
                 'limit' => 2,
                 'order' => '_lft',
-                'parent-page' => ['value' => $sections['economy'], 'label' => 'Economy'],
+                'parent-page' => ['value' => $sections['economy'], 'label' => 'Companies'],
             ]],
-            ['id' => Utils::uid(), 'type' => 'cards', 'group' => 'main', 'data' => [
-                'title' => 'Money that fits your life',
-                'columns' => 3,
+            ['id' => 'most-read', 'type' => 'cards', 'group' => 'main', 'data' => [
+                'title' => 'Most read',
+                'columns' => 4,
                 'cards' => [
-                    ['title' => 'Interest rates change the rules', 'text' => "Cash, bonds, loans: the old logic of zero rates no longer applies.\n\n[See what interest rates change](/what-interest-rates-change)", 'file' => ['id' => $this->img( 'contract' ), 'type' => 'file']],
-                    ['title' => 'Quiet portfolios outlast trends', 'text' => "Why consistent saving rules matter more than the next popular stock.\n\n[Reset the portfolio](/the-portfolio-without-fads)", 'file' => ['id' => $this->img( 'savings' ), 'type' => 'file']],
-                    ['title' => 'Renovation begins with the plan', 'text' => "Measure first, plan second, build last: a sequence that keeps cost and comfort visible.\n\n[Read the renovation plan](/renovating-in-the-right-order)", 'file' => ['id' => $this->img( 'home' ), 'type' => 'file']],
+                    ['title' => 'What higher interest rates really change', 'text' => '[The new rules for savers and borrowers](/what-interest-rates-change)'],
+                    ['title' => 'Why the best portfolios resist every new fashion', 'text' => '[A calmer approach to long-term investing](/the-portfolio-without-fads)'],
+                    ['title' => 'The sequence that keeps renovation costs under control', 'text' => '[Understand the building before construction begins](/renovating-in-the-right-order)'],
+                    ['title' => 'Leadership is clearest when the chief executive leaves the stage', 'text' => '[Leadership without the stage](/leadership-without-the-stage)'],
                 ],
             ]],
-            ['id' => Utils::uid(), 'type' => 'testimonial', 'group' => 'main', 'data' => [
-                'title' => 'Voices from business',
-                'items' => [
-                    ['name' => 'Dr. Sera Vale', 'role' => 'Energy economist', 'text' => 'The difficult question is not whether to invest. It is who carries which risk across the next twenty years.'],
-                    ['name' => 'Milo Kern', 'role' => 'Family business owner', 'text' => 'Transformation sounds like a project. In production, it is a series of practical decisions made every Monday morning.'],
-                    ['name' => 'Talia Brenn', 'role' => 'Urban planner', 'text' => 'Housing arrives faster when we treat existing buildings as material rather than as obstacles.'],
+            ['id' => 'opinion', 'type' => 'cards', 'group' => 'main', 'data' => [
+                'title' => 'Opinion',
+                'columns' => 3,
+                'cards' => [
+                    ['title' => 'The era of painless industrial policy is over', 'text' => "Elara Venn\n\n[Why governments must choose which risks to carry](/industry-without-a-blueprint)"],
+                    ['title' => 'A city should treat its empty offices as raw material', 'text' => "Mira Solven\n\n[The case for conversion before expansion](/housing-returns-to-the-city)"],
+                    ['title' => 'Quiet is infrastructure, not an employee benefit', 'text' => "Ivo Maren\n\n[How organisations can protect serious work](/productivity-needs-quiet)"],
                 ],
             ]],
             ['type' => 'reference', 'refid' => $elementId, 'group' => 'footer'],
@@ -450,12 +450,12 @@ class NewsDemo extends AbstractDemo
 
         $meta = [
             'meta-tags' => Validation::entry( 'meta-tags', [
-                'description' => 'The Ledger is an independent business newspaper with reporting and analysis on companies, money, property, and work.',
-                'keywords' => 'business newspaper, companies, investing, property, work, analysis',
+                'description' => 'The Ledger is an independent business newspaper with reporting and analysis on companies, markets, real estate, and work.',
+                'keywords' => 'business newspaper, companies, markets, real estate, work, analysis',
             ], 'meta' ),
             'social-media' => Validation::entry( 'social-media', [
                 'title' => 'The Ledger | Business in context',
-                'description' => 'Reporting, analysis, and conversations about companies, money, and work—carefully researched and clearly written.',
+                'description' => 'Reporting and analysis across companies, markets, real estate, and work—carefully researched and clearly written.',
                 'file' => ['id' => $fileId, 'type' => 'file'],
             ], 'meta' ),
         ];
@@ -556,10 +556,10 @@ class NewsDemo extends AbstractDemo
             $svg = <<<'SVG'
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-labelledby="title desc">
   <title id="title">The Ledger logo</title>
-  <desc id="desc">The Ledger serif wordmark with a crimson edition rule</desc>
-  <path d="M2 15h516" stroke="#172126" stroke-width="2"/>
-  <text x="18" y="70" fill="#172126" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="-2">THE LEDGER</text>
-  <path d="M18 81h484" stroke="#A02B33" stroke-width="5"/>
+  <desc id="desc">The Ledger serif wordmark with a burgundy edition rule</desc>
+  <path d="M2 15h516" stroke="#262A2C" stroke-width="2"/>
+  <text x="18" y="70" fill="#262A2C" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="-2">THE LEDGER</text>
+  <path d="M18 81h484" stroke="#8B1538" stroke-width="5"/>
 </svg>
 SVG;
 
@@ -567,7 +567,7 @@ SVG;
                 $svg,
                 'ledger-logo.svg',
                 'The Ledger logo',
-                'The Ledger serif wordmark with a crimson edition rule',
+                'The Ledger serif wordmark with a burgundy edition rule',
             );
         }
 
@@ -594,7 +594,7 @@ SVG;
         $meta = $data['meta'] ?? $meta ?: [
             'meta-tags' => Validation::entry( 'meta-tags', [
                 'description' => $description,
-                'keywords' => 'The Ledger, business newspaper, companies, investing, property, work',
+                'keywords' => 'The Ledger, business newspaper, companies, markets, real estate, work',
             ], 'meta' ),
             'social-media' => Validation::entry( 'social-media', [
                 'title' => $data['title'] ?? '',
@@ -649,9 +649,9 @@ SVG;
         $this->addSection(
             $home,
             $sections['economy'],
-            'Economy',
+            'Companies',
             'economy',
-            'Companies under pressure. Ideas in motion.',
+            'Industry is being rebuilt under pressure',
             'We follow the reinvention of industry, new energy markets, and independent companies whose strength does not come from headlines.',
             'factory',
             [
@@ -689,9 +689,9 @@ SVG;
         )->addSection(
             $home,
             $sections['money'],
-            'Money',
+            'Markets',
             'money',
-            'Wealth needs rules, not predictions.',
+            'Rates have changed the rules',
             'We explain interest rates, markets, and long-term planning so decisions can endure even when tomorrow’s headline changes.',
             'market',
             [
@@ -729,7 +729,7 @@ SVG;
         )->addSection(
             $home,
             $sections['property'],
-            'Property',
+            'Real estate',
             'property',
             'Building is expensive. What already exists is becoming precious.',
             'The Ledger examines how cities grow, buildings find new uses, and owners organise renovation without losing control of the cost.',
@@ -769,7 +769,7 @@ SVG;
         )->addSection(
             $home,
             $sections['work'],
-            'Work',
+            'Work & Careers',
             'work',
             'Good work is not produced at a permanent sprint.',
             'We examine leadership, concentration, and organisation without making individuals responsible for broken structures.',

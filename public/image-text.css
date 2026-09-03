@@ -29,24 +29,31 @@
 .image-text .start .image,
 .image-text .end .image {
     max-width: var(--ratio);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .image-text .start .image {
     float: inline-start;
-    padding-inline-end: 2rem;
+    padding-inline-end: 1.25rem;
 }
 
 .image-text .end .image {
     float: inline-end;
-    padding-inline-start: 2rem;
+    padding-inline-start: 1.25rem;
 }
 
 .image-text .grid-start,
 .image-text .grid-end {
     display: flex;
-    gap: 2rem;
+    gap: 1.25rem;
     align-items: flex-start;
+}
+
+.image-text .cms-text h2 {
+    font-family: var(--pico-font-family-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    letter-spacing: -0.025em;
+    text-transform: none;
 }
 
 .image-text .grid-end {

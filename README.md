@@ -13,14 +13,14 @@ php artisan vendor:publish --tag=cms-theme
 
 ## Design
 
-- **Style**: Authoritative, information-dense newspaper layout with a utility band, centered masthead, section rail, lead-story split, and ruled story grids
-- **Colors**: Light-grey canvas (`#ECEFF1`), soft newsprint surfaces (`#F8F9FA`), ink (`#172126`), crimson accents (`#A02B33`), and slate-blue utility areas (`#35566A`)
+- **Style**: Dense financial-newspaper layout with a utility band, compact centered masthead, section rail, restrained lead-story split, top-story columns, and a numbered most-read strip
+- **Colors**: One continuous light-grey newsprint surface (`#E9ECEE`), ink (`#262A2C`), burgundy accents (`#8B1538`), and deep-teal utility areas (`#0D4851`)
 - **Typography**: System serif masthead and headlines with compact sans-serif navigation, dates, metadata, and controls
 - **Geometry**: Sharp corners, thin editorial rules, and no decorative shadows
-- **Layout**: A responsive 1280px news desk with a larger lead story and compact supporting coverage
+- **Layout**: A responsive 1180px news desk with tight vertical rhythm, compact supporting coverage, and no floating page sheet
 - **CSS framework**: Pico CSS with `--pico-*` custom property overrides
 
-The visual hierarchy takes cues from established financial newspapers while retaining original branding, content, colors, and component treatment.
+The visual hierarchy takes cues from established financial newspapers while retaining original branding, content, a light-grey palette, and original component treatment.
 
 ## Demo
 
@@ -44,10 +44,10 @@ It creates Economy, Money, Property, and Work desks with original articles, an e
 
 | Property | Default | Description |
 |----------|---------|-------------|
-| `--pico-color` | `#172126` | Body and headline ink |
-| `--pico-background-color` | `#ECEFF1` | Light-grey page canvas |
-| `--pico-primary` | `#A02B33` | Section and action accent |
-| `--pico-secondary` | `#35566A` | Utility accent |
+| `--pico-color` | `#262A2C` | Body and headline ink |
+| `--pico-background-color` | `#E9ECEE` | Continuous light-grey newsprint |
+| `--pico-primary` | `#8B1538` | Section and action accent |
+| `--pico-secondary` | `#0D4851` | Utility accent |
 | `--pico-border-radius` | `0` | Sharp editorial geometry |
 
 ## License
