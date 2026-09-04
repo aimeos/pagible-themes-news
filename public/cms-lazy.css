@@ -167,7 +167,7 @@ p code {
 
 
 footer.cms-content {
-    background-color: var(--pico-secondary-hover);
+    background-color: var(--news-header);
     border-top: 0.25rem solid var(--pico-contrast);
     border-bottom: 0;
     padding: 3rem 0;

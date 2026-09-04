@@ -403,14 +403,46 @@ class NewsDemo extends AbstractDemo
                 'button' => 'Europe’s industrial rebuild',
                 'files' => [['id' => $fileId, 'type' => 'file']],
             ]],
+            ['id' => 'editors-picks', 'type' => 'cards', 'group' => 'main', 'data' => [
+                'title' => 'Editor’s picks',
+                'columns' => 1,
+                'cards' => [
+                    [
+                        'title' => 'The era of painless industrial policy is over',
+                        'url' => '/industry-without-a-blueprint',
+                        'text' => "Opinion\n\nElara Venn",
+                    ],
+                    [
+                        'title' => 'Why every portfolio needs permission to be boring',
+                        'url' => '/the-portfolio-without-fads',
+                        'text' => "Markets insight\n\nNia Calder",
+                    ],
+                ],
+            ]],
             ['id' => 'top-stories', 'type' => 'cards', 'group' => 'main', 'data' => [
                 'title' => 'Top stories',
                 'columns' => 4,
                 'cards' => [
-                    ['title' => 'Grid investors confront the missing link in Europe’s energy plans', 'text' => "Energy · 7 min\n\n[The contest for networks and storage](/who-owns-the-grid)"],
-                    ['title' => 'Investors rediscover the appeal of an intentionally dull portfolio', 'text' => "Markets · 5 min\n\n[The portfolio without fads](/the-portfolio-without-fads)"],
-                    ['title' => 'Office conversions bring housing back into the heart of the city', 'text' => "Real estate · 6 min\n\n[How housing returns to the city](/housing-returns-to-the-city)"],
-                    ['title' => 'The companies protecting quiet time from the meeting calendar', 'text' => "Work & careers · 4 min\n\n[Why productivity needs quiet](/productivity-needs-quiet)"],
+                    [
+                        'title' => 'Grid investors confront the missing link in Europe’s energy plans',
+                        'url' => '/who-owns-the-grid',
+                        'text' => "Energy\n\nUtilities need networks, storage, and patient capital to make abundant renewable power useful.\n\n7 min",
+                    ],
+                    [
+                        'title' => 'Investors rediscover the appeal of an intentionally dull portfolio',
+                        'url' => '/the-portfolio-without-fads',
+                        'text' => "Markets\n\nBroad exposure and dependable rules are winning attention as fashionable bets lose momentum.\n\n5 min",
+                    ],
+                    [
+                        'title' => 'Office conversions bring housing back into the heart of the city',
+                        'url' => '/housing-returns-to-the-city',
+                        'text' => "Real estate\n\nDevelopers are learning which empty buildings can become useful homes without costly reconstruction.\n\n6 min",
+                    ],
+                    [
+                        'title' => 'The companies protecting quiet time from the meeting calendar',
+                        'url' => '/productivity-needs-quiet',
+                        'text' => "Work & careers\n\nManagers are treating uninterrupted time as operating infrastructure rather than a private preference.\n\n4 min",
+                    ],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'image-text', 'group' => 'main', 'data' => [
@@ -428,21 +460,33 @@ class NewsDemo extends AbstractDemo
             ]],
             ['id' => 'most-read', 'type' => 'cards', 'group' => 'main', 'data' => [
                 'title' => 'Most read',
-                'columns' => 4,
+                'columns' => 1,
                 'cards' => [
-                    ['title' => 'What higher interest rates really change', 'text' => '[The new rules for savers and borrowers](/what-interest-rates-change)'],
-                    ['title' => 'Why the best portfolios resist every new fashion', 'text' => '[A calmer approach to long-term investing](/the-portfolio-without-fads)'],
-                    ['title' => 'The sequence that keeps renovation costs under control', 'text' => '[Understand the building before construction begins](/renovating-in-the-right-order)'],
-                    ['title' => 'Leadership is clearest when the chief executive leaves the stage', 'text' => '[Leadership without the stage](/leadership-without-the-stage)'],
+                    ['title' => 'What higher interest rates really change', 'url' => '/what-interest-rates-change'],
+                    ['title' => 'Why the best portfolios resist every new fashion', 'url' => '/the-portfolio-without-fads'],
+                    ['title' => 'The sequence that keeps renovation costs under control', 'url' => '/renovating-in-the-right-order'],
+                    ['title' => 'Leadership is clearest when the chief executive leaves the stage', 'url' => '/leadership-without-the-stage'],
                 ],
             ]],
             ['id' => 'opinion', 'type' => 'cards', 'group' => 'main', 'data' => [
                 'title' => 'Opinion',
                 'columns' => 3,
                 'cards' => [
-                    ['title' => 'The era of painless industrial policy is over', 'text' => "Elara Venn\n\n[Why governments must choose which risks to carry](/industry-without-a-blueprint)"],
-                    ['title' => 'A city should treat its empty offices as raw material', 'text' => "Mira Solven\n\n[The case for conversion before expansion](/housing-returns-to-the-city)"],
-                    ['title' => 'Quiet is infrastructure, not an employee benefit', 'text' => "Ivo Maren\n\n[How organisations can protect serious work](/productivity-needs-quiet)"],
+                    [
+                        'title' => 'The era of painless industrial policy is over',
+                        'url' => '/industry-without-a-blueprint',
+                        'text' => "Governments must choose which risks to carry and which promises to abandon.\n\nElara Venn",
+                    ],
+                    [
+                        'title' => 'A city should treat its empty offices as raw material',
+                        'url' => '/housing-returns-to-the-city',
+                        'text' => "Conversion should come before another expansion towards the edge.\n\nMira Solven",
+                    ],
+                    [
+                        'title' => 'Quiet is infrastructure, not an employee benefit',
+                        'url' => '/productivity-needs-quiet',
+                        'text' => "Organisations that protect serious work make faster decisions with fewer meetings.\n\nIvo Maren",
+                    ],
                 ],
             ]],
             ['type' => 'reference', 'refid' => $elementId, 'group' => 'footer'],
@@ -554,12 +598,10 @@ class NewsDemo extends AbstractDemo
         if( !isset( $this->logoFile ) )
         {
             $svg = <<<'SVG'
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 76" role="img" aria-labelledby="title desc">
   <title id="title">The Ledger logo</title>
-  <desc id="desc">The Ledger serif wordmark with a burgundy edition rule</desc>
-  <path d="M2 15h516" stroke="#262A2C" stroke-width="2"/>
-  <text x="18" y="70" fill="#262A2C" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="-2">THE LEDGER</text>
-  <path d="M18 81h484" stroke="#8B1538" stroke-width="5"/>
+  <desc id="desc">The Ledger serif newspaper wordmark</desc>
+  <text x="260" y="57" fill="#33302E" font-family="Georgia, 'Times New Roman', serif" font-size="55" font-weight="400" letter-spacing="0" text-anchor="middle">THE LEDGER</text>
 </svg>
 SVG;
 
@@ -567,7 +609,7 @@ SVG;
                 $svg,
                 'ledger-logo.svg',
                 'The Ledger logo',
-                'The Ledger serif wordmark with a burgundy edition rule',
+                'The Ledger serif newspaper wordmark',
             );
         }
 

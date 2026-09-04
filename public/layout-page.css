@@ -20,7 +20,7 @@ main .cms-content > * {
 }
 
 .cms-content .container {
-    padding: 1.25rem;
+    padding: 1.25rem 0.625rem;
 }
 
 main .heading h1,
@@ -54,5 +54,29 @@ main .heading h3 {
 @media screen and (min-width: 768px) {
     .cms-content .container {
         padding-block: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main .cms-content:has(> #top-stories) {
+        column-gap: 1.25rem;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    main .cms-content:has(> #top-stories) > * {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
+
+    main .cms-content:has(> #top-stories) > .hero,
+    main .cms-content:has(> #top-stories) > .blog {
+        grid-column: span 8;
+    }
+
+    main .cms-content:has(> #top-stories) > #editors-picks,
+    main .cms-content:has(> #top-stories) > #most-read {
+        border-inline-start: 1px solid var(--pico-muted-border-color);
+        grid-column: span 4;
     }
 }
