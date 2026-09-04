@@ -166,7 +166,6 @@
     }
 
     .hero .second {
-        border-inline-start: 1px solid var(--pico-muted-border-color);
         border-top: 0;
         padding-block: 1.5rem;
     }
