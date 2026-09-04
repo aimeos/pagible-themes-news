@@ -4,9 +4,7 @@
  */
 
 :root[data-theme=light] {
-    --news-accent: #9E2F50;
-    --news-content-width: 1210px;
-    --news-header: #262A33;
+    --news-content-width: 1180px;
     --pico-font-family-sans-serif: Arial, Helvetica, ui-sans-serif, sans-serif;
     --pico-font-family-display: 'Iowan Old Style', Baskerville, Georgia, 'Times New Roman', ui-serif, serif;
     --pico-font-family-monospace: ui-monospace, monospace;
@@ -16,56 +14,56 @@
     --pico-nav-element-spacing-vertical: 0.5rem;
     --pico-nav-link-spacing-horizontal: 0.5rem;
     --pico-nav-link-spacing-vertical: 0.5rem;
-    --pico-color: #33302E;
+    --pico-color: #262A2C;
     --pico-background-color: #F8FBFF;
     --pico-text-selection-color: #CCDADD;
-    --pico-muted-color: #66605C;
-    --pico-muted-border-color: #B9B4B0;
-    --pico-muted-background-color: #EEF1F4;
-    --pico-contrast: #33302E;
-    --pico-contrast-border: #33302E;
-    --pico-contrast-background: #33302E;
-    --pico-contrast-underline: #33302E;
+    --pico-muted-color: #545C60;
+    --pico-muted-border-color: #B8BFC2;
+    --pico-muted-background-color: #DDE1E3;
+    --pico-contrast: #262A2C;
+    --pico-contrast-border: #262A2C;
+    --pico-contrast-background: #262A2C;
+    --pico-contrast-underline: #262A2C;
     --pico-contrast-hover: #080A0B;
     --pico-contrast-hover-border: #080A0B;
     --pico-contrast-hover-background: #080A0B;
     --pico-contrast-hover-underline: #080A0B;
     --pico-contrast-focus: #CCDADD;
     --pico-contrast-inverse: #F8FBFF;
-    --pico-primary: #2E6E9E;
-    --pico-primary-background: #2E6E9E;
-    --pico-primary-border: #2E6E9E;
-    --pico-primary-underline: #2E6E9E;
-    --pico-primary-hover: #275E86;
-    --pico-primary-hover-background: #275E86;
-    --pico-primary-hover-border: #275E86;
-    --pico-primary-hover-underline: #275E86;
-    --pico-primary-focus: #C7DBEA;
+    --pico-primary: #8B1538;
+    --pico-primary-background: #8B1538;
+    --pico-primary-border: #8B1538;
+    --pico-primary-underline: #8B1538;
+    --pico-primary-hover: #660C29;
+    --pico-primary-hover-background: #660C29;
+    --pico-primary-hover-border: #660C29;
+    --pico-primary-hover-underline: #660C29;
+    --pico-primary-focus: #E3C5CE;
     --pico-primary-inverse: #FFFFFF;
-    --pico-secondary: #262A33;
-    --pico-secondary-background: #262A33;
-    --pico-secondary-border: #262A33;
-    --pico-secondary-underline: #262A33;
-    --pico-secondary-hover: #171A20;
-    --pico-secondary-hover-background: #171A20;
-    --pico-secondary-hover-border: #171A20;
-    --pico-secondary-hover-underline: #171A20;
-    --pico-secondary-focus: #D4D6DA;
+    --pico-secondary: #0D4851;
+    --pico-secondary-background: #0D4851;
+    --pico-secondary-border: #0D4851;
+    --pico-secondary-underline: #0D4851;
+    --pico-secondary-hover: #07343B;
+    --pico-secondary-hover-background: #07343B;
+    --pico-secondary-hover-border: #07343B;
+    --pico-secondary-hover-underline: #07343B;
+    --pico-secondary-focus: #C4D4D6;
     --pico-secondary-inverse: #FFFFFF;
-    --pico-h1-color: #33302E;
-    --pico-h2-color: #33302E;
-    --pico-h3-color: #33302E;
-    --pico-h4-color: #33302E;
-    --pico-h5-color: #47423F;
-    --pico-h6-color: #5D5753;
+    --pico-h1-color: #262A2C;
+    --pico-h2-color: #262A2C;
+    --pico-h3-color: #262A2C;
+    --pico-h4-color: #262A2C;
+    --pico-h5-color: #353B3E;
+    --pico-h6-color: #495155;
     --pico-box-shadow: none;
-    --pico-dropdown-color: #33302E;
+    --pico-dropdown-color: #262A2C;
     --pico-dropdown-border-color: #B8BFC2;
     --pico-dropdown-background-color: #F8FBFF;
     --pico-dropdown-hover-background-color: #DDE1E3;
-    --pico-dropdown-box-shadow: 0 0.5rem 1.5rem #33302E1A;
-    --pico-modal-overlay-background-color: #33302EA6;
-    --pico-code-background-color: #33302E;
+    --pico-dropdown-box-shadow: 0 0.5rem 1.5rem #262A2C1A;
+    --pico-modal-overlay-background-color: #262A2CA6;
+    --pico-code-background-color: #262A2C;
     --pico-code-color: #FFFFFF;
     --pico-border-radius: 0;
 }
@@ -99,7 +97,7 @@ body {
 }
 
 :where(a:not([role=button]):not([role=menuitem]):hover) {
-    color: var(--pico-contrast);
+    color: var(--pico-primary-hover);
 }
 
 .skip-link {
@@ -145,7 +143,7 @@ nav li :where(a, [role=link]) {
     margin: auto;
     max-width: var(--news-content-width);
     min-height: 2.25rem;
-    padding-inline: 0.625rem;
+    padding-inline: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -210,7 +208,7 @@ header nav .brand a {
     color: var(--pico-contrast);
     font-family: var(--pico-font-family-display);
     font-size: 3.25rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: -0.055em;
     line-height: 1;
     text-decoration: none;
@@ -265,7 +263,7 @@ header nav .menu a.active {
 
 header nav ul.menu > li:first-child {
     inset-block-start: 1.625rem;
-    inset-inline-start: 0.625rem;
+    inset-inline-start: 1.25rem;
     position: absolute;
 }
 
@@ -276,12 +274,12 @@ header nav ul.menu > li:first-child a {
 
 header nav ul.menu > li.subscribe {
     inset-block-start: 1.4rem;
-    inset-inline-end: 0.625rem;
+    inset-inline-end: 1.25rem;
     position: absolute;
 }
 
 header nav ul.menu > li.subscribe > a {
-    background: var(--news-header);
+    background: var(--pico-primary);
     color: var(--pico-primary-inverse);
     font-size: 0.75rem;
     letter-spacing: 0.06em;
@@ -310,7 +308,7 @@ header nav ul.menu > li.login svg {
 header nav ul.menu > li.subscribe > a:hover,
 header nav ul.menu > li.subscribe > a:focus,
 header nav ul.menu > li.subscribe > a:active {
-    background: var(--pico-contrast-hover);
+    background: var(--pico-primary-hover);
     color: var(--pico-primary-inverse);
 }
 
@@ -468,7 +466,7 @@ nav.breadcrumb {
 nav.breadcrumb > ul {
     margin: auto;
     max-width: var(--news-content-width);
-    padding: 0 0.625rem;
+    padding: 0 2rem;
     width: 100%;
 }
 
@@ -516,7 +514,7 @@ h6 {
 h1,
 h2,
 h3 {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h4,
@@ -533,7 +531,6 @@ h1 {
 
 h2 {
     border-top: 0.25rem solid var(--pico-contrast);
-    border-bottom: 1px solid var(--pico-muted-border-color);
     font-family: var(--pico-font-family-sans-serif);
     font-size: 0.8125rem;
     letter-spacing: 0.075em;
@@ -610,9 +607,9 @@ img {
 }
 
 body > footer.bottom {
-    background: var(--news-header);
+    background: var(--pico-secondary-hover);
     border-top: 0;
-    border-bottom: 0.375rem solid var(--news-accent);
+    border-bottom: 0.375rem solid var(--pico-primary);
     color: var(--pico-secondary-inverse);
     padding: 2rem;
     text-align: center;

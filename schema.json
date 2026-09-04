@@ -29,25 +29,17 @@
             "group": "theme",
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h15a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V5h15v14M7 7h5v5H7V7m7 0h4v2h-4V7m0 3h4v2h-4v-2M7 14h11v2H7v-2m0 3h8v1H7v-1Z\" /></svg>",
             "fields": {
-                "--news-accent": {
-                    "type": "color",
-                    "default": "#9E2F50"
-                },
-                "--news-header": {
-                    "type": "color",
-                    "default": "#262A33"
-                },
                 "--pico-font-family-sans-serif": {
                     "type": "string",
                     "default": "Arial, Helvetica, ui-sans-serif, sans-serif"
                 },
                 "--pico-color": {
                     "type": "color",
-                    "default": "#33302E"
+                    "default": "#172126"
                 },
                 "--pico-background-color": {
                     "type": "color",
-                    "default": "#F8FBFF"
+                    "default": "#ECEFF1"
                 },
                 "--pico-text-selection-color": {
                     "type": "color",
@@ -55,7 +47,7 @@
                 },
                 "--pico-contrast": {
                     "type": "color",
-                    "default": "#33302E"
+                    "default": "#172126"
                 },
                 "--pico-contrast-hover": {
                     "type": "color",
@@ -63,39 +55,39 @@
                 },
                 "--pico-contrast-inverse": {
                     "type": "color",
-                    "default": "#F8FBFF"
+                    "default": "#F8F9FA"
                 },
                 "--pico-primary": {
                     "type": "color",
-                    "default": "#2E6E9E"
+                    "default": "#A02B33"
                 },
                 "--pico-primary-background": {
                     "type": "color",
-                    "default": "#2E6E9E14"
+                    "default": "#A02B3314"
                 },
                 "--pico-primary-hover": {
                     "type": "color",
-                    "default": "#275E86"
+                    "default": "#7F1F27"
                 },
                 "--pico-primary-hover-background": {
                     "type": "color",
-                    "default": "#275E861A"
+                    "default": "#7F1F271A"
                 },
                 "--pico-secondary": {
                     "type": "color",
-                    "default": "#262A33"
+                    "default": "#35566A"
                 },
                 "--pico-secondary-background": {
                     "type": "color",
-                    "default": "#262A3314"
+                    "default": "#35566A14"
                 },
                 "--pico-secondary-hover": {
                     "type": "color",
-                    "default": "#171A20"
+                    "default": "#203B4B"
                 },
                 "--pico-secondary-hover-background": {
                     "type": "color",
-                    "default": "#171A201A"
+                    "default": "#203B4B1A"
                 },
                 "--pico-border-radius": {
                     "type": "string",

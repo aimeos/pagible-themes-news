@@ -1,6 +1,6 @@
 ---
 name: news
-description: Dense financial-newspaper theme with a compact serif masthead, 12-column front page, editor and most-read side rails, ruled story columns, and a continuous cool-grey newsprint surface.
+description: Dense financial-newspaper theme with a compact serif masthead, restrained lead-story grid, ruled story columns, numbered most-read coverage, and a continuous light-grey newsprint surface.
 license: MIT
 metadata:
   author: Aimeos
@@ -14,7 +14,7 @@ Build credible newspaper pages that make dense reporting easy to scan and give t
 
 ## Brand
 
-News is sober, current, and information-led. The canvas and content use one continuous cool grey (`#F8FBFF`), text is soft ink (`#33302E`), editorial blue (`#2E6E9E`) marks standard links, claret (`#9E2F50`) is reserved for kickers and ranking numbers, and near-black (`#262A33`) supports utility areas. It uses Pico CSS and the existing markup in `theme/views/`.
+News is sober, current, and information-led. The canvas and content use one continuous light grey (`#E9ECEE`), text is ink (`#262A2C`), burgundy (`#8B1538`) marks sections and actions, and deep teal (`#0D4851`) supports utility areas. It uses Pico CSS and the existing markup in `theme/views/`.
 
 ## Style Foundations
 
@@ -22,25 +22,24 @@ News is sober, current, and information-led. The canvas and content use one cont
 - Headline rhythm: compact line height, restrained sizing, and a clear difference between the lead and supporting stories
 - Surfaces: one continuous light-grey newsprint field; rules divide coverage instead of floating sheets, cards, or shadows
 - Geometry: `--pico-border-radius: 0`; cards, dialogs, fields, and buttons stay square
-- Accent: editorial blue is used for links and interactive states; claret is reserved for section kickers, dates, and ordered rankings
+- Accent: burgundy is reserved for sections, links, focus, dates, and active navigation
 - Images: editorial crops use `3 / 2`, article leads use `16 / 9`, with restrained saturation
-- Maximum width: 1210px shared 12-column news desk, with narrower article and prose measures for readability
+- Maximum width: 1180px shared news desk, with narrower article and prose measures for readability
 
 ## Component Rules
 
 - Header: place a compact edition band above the centered masthead and a separate section rail on desktop; collapse to one accessible menu below 992px
-- Home grid: pair the lead with an editor’s-picks rail, then pair the latest-news lead with the numbered most-read rail at large breakpoints
 - Hero: use a compact text-and-image lead grid on wide screens and stack it on small screens; never turn the lead into a full-screen marketing banner
 - Story listings: give the lead story two-thirds of the width and stack supporting headlines in the remaining column
-- Cards: make supplied story URLs wrap headlines, separate adjacent stories with thin rules, use four compact columns for top stories, and stack ordered most-read coverage in its side rail
+- Cards: separate adjacent stories with thin rules; use four compact columns for top stories and ordered figures for most-read coverage
 - Articles: keep introductions and body copy on a narrow measure while cover images retain visual authority
 - Buttons: keep transactional controls square; render lead-story actions as simple underlined text links
-- Footer: use ruled link columns on a near-black utility surface and repeat the masthead identity below them
+- Footer: use ruled link columns on a deep-teal utility surface and repeat the masthead identity below them
 
 ## Accessibility
 
 - Keep text and controls at WCAG 2.2 AA contrast or better
-- Use a visible 3px editorial-blue focus outline with a 3px offset
+- Use a visible 3px crimson focus outline with a 3px offset
 - Preserve semantic headings, navigation labels, dialogs, details, dates, and skip links
 - Do not use color alone for active navigation; combine it with an inset rule
 - Keep touch targets at least 2.25rem high and allow navigation labels to wrap on mobile

@@ -16,7 +16,7 @@
 }
 
 .hero .background::after {
-    background: linear-gradient(90deg, #262A33E8 0%, #262A33B8 55%, #262A3352 100%);
+    background: linear-gradient(90deg, #172126E8 0%, #172126B8 55%, #17212652 100%);
     content: "";
     inset: 0;
     position: absolute;
@@ -38,7 +38,7 @@
 
 .hero .container:not(:has(.second)) .first {
     max-width: 52rem;
-    padding: 2rem 0.625rem;
+    padding: 2rem 1.25rem;
 }
 
 .hero .container:has(.second) {
@@ -49,7 +49,7 @@
     align-self: start;
     margin: 0;
     min-width: 0;
-    padding: 1.25rem 0.625rem;
+    padding: 1.25rem;
     text-align: start;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .hero .subtitle {
-    color: var(--news-accent);
+    color: var(--pico-primary);
     display: inline-block;
     font-size: 0.6875rem;
     font-weight: 700;
@@ -70,8 +70,8 @@
 }
 
 .hero h1 {
-    font-size: clamp(2.125rem, 3.4vw, 3.125rem);
-    line-height: 1;
+    font-size: clamp(2.25rem, 4.1vw, 3.625rem);
+    line-height: 0.98;
     margin: 0 0 0.875rem;
     max-width: 15ch;
 }
@@ -162,7 +162,7 @@
     }
 
     .hero .first {
-        padding: 1.5rem 1.25rem 1.5rem 0.625rem;
+        padding: 1.5rem 1.5rem 1.5rem 1.25rem;
     }
 
     .hero .second {

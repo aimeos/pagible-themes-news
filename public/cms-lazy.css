@@ -167,7 +167,7 @@ p code {
 
 
 footer.cms-content {
-    background-color: var(--news-header);
+    background-color: var(--pico-secondary-hover);
     border-top: 0.25rem solid var(--pico-contrast);
     border-bottom: 0;
     padding: 3rem 0;
@@ -195,9 +195,22 @@ footer.cms-content .cards .card-list {
 
 footer.cms-content .cards .card-item {
     background: transparent;
-    border-bottom: 1px solid #FFFFFF40;
+    border-inline-start: 1px solid #FFFFFF40;
     border-top: 0;
-    padding-bottom: 1rem;
+    padding: 1rem;
+}
+
+footer.cms-content .cards .card-item:nth-child(2n + 1) {
+    border-inline-start: 0;
+    padding-inline-start: 0;
+}
+
+footer.cms-content .cards .card-item:nth-child(2n) {
+    padding-inline-end: 0;
+}
+
+footer.cms-content .cards .card-item:nth-child(n + 3) {
+    border-top: 1px solid #FFFFFF40;
 }
 
 footer.cms-content .cards .title {
@@ -248,8 +261,8 @@ footer.cms-content + footer.bottom {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    footer.cms-content .cards .card-item {
-        border-inline-start: 1px solid var(--pico-muted-border-color);
+    footer.cms-content .cards .card-item:nth-child(n) {
+        border-inline-start: 1px solid #FFFFFF40;
         padding-inline: 1.25rem;
     }
 
@@ -260,6 +273,10 @@ footer.cms-content + footer.bottom {
 
     footer.cms-content .cards .card-item:nth-child(4n) {
         padding-inline-end: 0;
+    }
+
+    footer.cms-content .cards .card-item:nth-child(-n + 4) {
+        border-top: 0;
     }
 }
 

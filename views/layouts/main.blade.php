@@ -23,7 +23,7 @@
             ">
         @endif
 
-        <meta name="theme-color" content="{{ cms($page, 'config.theme.data.--pico-background-color') ?: '#F8FBFF' }}">
+        <meta name="theme-color" content="{{ cms($page, 'config.theme.data.--pico-background-color') ?: '#E9ECEE' }}">
 
         <title>{{ cms($page, 'title') }}</title>
 

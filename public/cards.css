@@ -23,6 +23,10 @@
     text-align: start;
 }
 
+.cards .card-item:first-child {
+    border-top: 0;
+}
+
 .cards .card-item > picture,
 .cards .card-item > .card-image {
     display: block;
@@ -41,17 +45,6 @@
     font-size: clamp(1.075rem, 1.6vw, 1.35rem);
     line-height: 1.08;
     margin: 0 0 0.5rem;
-}
-
-.cards .title a,
-.cards .title a:visited {
-    color: var(--pico-contrast);
-    text-decoration: none;
-}
-
-.cards .title a:hover,
-.cards .title a:focus {
-    color: var(--pico-primary);
 }
 
 .cards .cms-text,
@@ -84,7 +77,7 @@
 }
 
 #most-read .card-item::before {
-    color: var(--news-accent);
+    color: var(--pico-primary);
     content: counter(most-read);
     font-family: var(--pico-font-family-display);
     font-size: 2rem;
@@ -93,44 +86,6 @@
 
 #most-read .card-text {
     min-width: 0;
-}
-
-#editors-picks .card-list,
-#most-read .card-list {
-    max-width: none;
-}
-
-#editors-picks .card-item,
-#most-read .card-item {
-    border-inline-start: 0;
-    padding-inline: 0;
-}
-
-#editors-picks .title,
-#most-read .title {
-    font-size: 1.075rem;
-}
-
-#editors-picks h2,
-#top-stories h2,
-#most-read h2,
-#opinion h2 {
-    color: var(--news-accent);
-}
-
-#editors-picks .cms-text p:first-child,
-#top-stories .cms-text p:first-child {
-    color: var(--news-accent);
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-}
-
-#top-stories .cms-text p:last-child,
-#opinion .cms-text p:last-child {
-    color: var(--pico-muted-color);
-    font-size: 0.6875rem;
-    font-weight: 700;
 }
 
 @media screen and (min-width: 576px) {
@@ -154,6 +109,10 @@
     .cards .card-list:not(.cols-1) .card-item:nth-child(2n) {
         padding-inline-end: 0;
     }
+
+    .cards .card-list:not(.cols-1) .card-item:nth-child(-n + 2) {
+        border-top: 0;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -166,9 +125,9 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .cards .card-list.cols-auto .card-item,
-    .cards .card-list.cols-3 .card-item,
-    .cards .card-list.cols-4 .card-item {
+    .cards .card-list.cols-auto .card-item:nth-child(n),
+    .cards .card-list.cols-3 .card-item:nth-child(n),
+    .cards .card-list.cols-4 .card-item:nth-child(n) {
         border-inline-start: 1px solid var(--pico-muted-border-color);
         padding-inline: 1rem;
     }
@@ -184,5 +143,11 @@
     .cards .card-list.cols-3 .card-item:nth-child(3n),
     .cards .card-list.cols-4 .card-item:nth-child(4n) {
         padding-inline-end: 0;
+    }
+
+    .cards .card-list.cols-auto .card-item:nth-child(-n + 3),
+    .cards .card-list.cols-3 .card-item:nth-child(-n + 3),
+    .cards .card-list.cols-4 .card-item:nth-child(-n + 4) {
+        border-top: 0;
     }
 }
