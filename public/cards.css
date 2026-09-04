@@ -47,6 +47,17 @@
     margin: 0 0 0.5rem;
 }
 
+.cards .title a,
+.cards .title a:visited {
+    color: var(--pico-contrast);
+    text-decoration: none;
+}
+
+.cards .title a:hover,
+.cards .title a:focus {
+    color: var(--pico-primary);
+}
+
 .cards .cms-text,
 .cards .text {
     color: var(--pico-muted-color);
