@@ -52,6 +52,7 @@
 }
 
 .image-text .cms-text h2 {
+    border-top: 0;
     font-family: var(--pico-font-family-display);
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     letter-spacing: -0.025em;
