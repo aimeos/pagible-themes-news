@@ -6,7 +6,7 @@
 :root[data-theme=light] {
     --news-content-width: 1180px;
     --pico-font-family-sans-serif: Arial, Helvetica, ui-sans-serif, sans-serif;
-    --pico-font-family-display: 'Iowan Old Style', Baskerville, Georgia, 'Times New Roman', ui-serif, serif;
+    --pico-font-family-display: Baskerville, Georgia, 'Times New Roman', ui-serif, serif;
     --pico-font-family-monospace: ui-monospace, monospace;
     --pico-nav-breadcrumb-divider: '/';
     --pico-block-spacing-vertical: 0;
@@ -29,7 +29,7 @@
     --pico-contrast-hover-background: #080A0B;
     --pico-contrast-hover-underline: #080A0B;
     --pico-contrast-focus: #CCDADD;
-    --pico-contrast-inverse: #F8FBFF;
+    --pico-contrast-inverse: #FFFFFF;
     --pico-primary: #8B1538;
     --pico-primary-background: #8B1538;
     --pico-primary-border: #8B1538;
@@ -464,10 +464,12 @@ nav.breadcrumb {
 }
 
 nav.breadcrumb > ul {
-    margin: auto;
-    max-width: var(--news-content-width);
-    padding: 0 2rem;
     width: 100%;
+    max-width: var(--news-content-width);
+    border-bottom: 1px solid var(--pico-muted-border-color);
+    background-color: #f0f0f0;
+    padding: 0 1rem;
+    margin: auto;
 }
 
 nav.breadcrumb ul li {
