@@ -408,7 +408,7 @@ class NewsDemo extends AbstractDemo
                 'columns' => 4,
                 'cards' => [
                     ['title' => 'Grid investors confront the missing link in Europe’s energy plans', 'text' => "Energy · 7 min\n\nThe contest for networks and storage", 'url' => '/who-owns-the-grid'],
-                    ['title' => 'Investors rediscover the appeal of an intentionally dull portfolio', 'text' => "Markets · 5 min\n\nThe portfolio without fads", 'url' => '/the-portfolio-without-fads'],
+                    ['title' => 'Investors rediscover the appeal of a boring portfolio', 'text' => "Markets · 5 min\n\nThe portfolio without fads", 'url' => '/the-portfolio-without-fads'],
                     ['title' => 'Office conversions bring housing back into the heart of the city', 'text' => "Real estate · 6 min\n\nHow housing returns to the city", 'url' => '/housing-returns-to-the-city'],
                     ['title' => 'The companies protecting quiet time from the meeting calendar', 'text' => "Work & careers · 4 min\n\nWhy productivity needs quiet", 'url' => '/productivity-needs-quiet'],
                 ],
@@ -430,10 +430,10 @@ class NewsDemo extends AbstractDemo
                 'title' => 'Most read',
                 'columns' => 4,
                 'cards' => [
-                    ['title' => 'What higher interest rates really change', 'text' => 'The new rules for savers and borrowers', 'url' => '/what-interest-rates-change'],
+                    ['title' => 'How higher interest rates rewrite the rules of money', 'text' => 'The new rules for savers and borrowers', 'url' => '/what-interest-rates-change'],
                     ['title' => 'Why the best portfolios resist every new fashion', 'text' => 'A calmer approach to long-term investing', 'url' => '/the-portfolio-without-fads'],
                     ['title' => 'The sequence that keeps renovation costs under control', 'text' => 'Understand the building before construction begins', 'url' => '/renovating-in-the-right-order'],
-                    ['title' => 'Leadership is clearest when the chief executive leaves the stage', 'text' => 'Leadership without the stage', 'url' => '/leadership-without-the-stage'],
+                    ['title' => 'Leadership is clearest when the CEO leaves the stage', 'text' => 'Leadership without the stage', 'url' => '/leadership-without-the-stage'],
                 ],
             ]],
             ['id' => 'opinion', 'type' => 'cards', 'group' => 'main', 'data' => [
